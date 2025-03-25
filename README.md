@@ -1,8 +1,12 @@
 # Local Event Scraper and Alert System 🎉
 
+[English](#english) | [فارسی](#فارسی)
+
+## English 🇺🇸
+
 A powerful Node.js application that automatically scrapes local events from various sources and sends personalized notifications to users based on their preferences.
 
-## Features 🌟
+### Features 🌟
 
 - **Automated Event Scraping**: Scrapes events from multiple sources using both Puppeteer and Cheerio
 - **Smart Event Matching**: Filters events based on user preferences (location, categories, radius)
@@ -14,7 +18,7 @@ A powerful Node.js application that automatically scrapes local events from vari
 - **Scheduled Scraping**: Automated event updates using node-cron
 - **Error Handling**: Comprehensive error handling and logging
 
-## Tech Stack 🛠️
+### Tech Stack 🛠️
 
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB with Mongoose
@@ -24,7 +28,7 @@ A powerful Node.js application that automatically scrapes local events from vari
 - **Scheduling**: node-cron
 - **Logging**: Winston
 
-## Prerequisites 📋
+### Prerequisites 📋
 
 - Node.js (v14 or higher)
 - MongoDB
@@ -32,12 +36,12 @@ A powerful Node.js application that automatically scrapes local events from vari
 - Twilio Account (optional, for SMS notifications)
 - SMTP Server (optional, for email notifications)
 
-## Installation 🚀
+### Installation 🚀
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/local-event-scraper.git
-cd local-event-scraper
+git clone https://github.com/VersatileFusion/Local-Event-Scraper-and-Alert-System.git
+cd Local-Event-Scraper-and-Alert-System
 ```
 
 2. Install dependencies:
@@ -66,7 +70,7 @@ SMTP_PASS=your_smtp_password
 CHROME_PATH=C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe
 ```
 
-## Usage 💡
+### Usage 💡
 
 1. Start the server:
 ```bash
@@ -83,27 +87,27 @@ npm run seed
 npm run scrape
 ```
 
-## API Endpoints 🌐
+### API Endpoints 🌐
 
-### Users
+#### Users
 - `POST /api/users` - Create a new user
 - `GET /api/users/:userId` - Get user details
 - `PUT /api/users/:userId/preferences` - Update user preferences
 - `PUT /api/users/:userId/location` - Update user location
 
-### Events
+#### Events
 - `GET /api/events` - Get all events
 - `GET /api/events/:eventId` - Get event details
 - `GET /api/events/search` - Search events by criteria
 
-## API Documentation 📚
+### API Documentation 📚
 
 Once the server is running, visit:
 ```
 http://localhost:3000/api-docs
 ```
 
-## Contributing 🤝
+### Contributing 🤝
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -111,11 +115,11 @@ http://localhost:3000/api-docs
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License 📄
+### License 📄
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments 🙏
+### Acknowledgments 🙏
 
 - [Express.js](https://expressjs.com/)
 - [MongoDB](https://www.mongodb.com/)
@@ -123,6 +127,137 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Twilio](https://www.twilio.com/)
 - [Swagger](https://swagger.io/)
 
-## Support 💬
+### Support 💬
 
-If you have any questions or need help, please open an issue in the GitHub repository. 
+If you have any questions or need help, please open an issue in the GitHub repository.
+
+---
+
+## فارسی 🇮🇷
+
+یک برنامه قدرتمند Node.js که به طور خودکار رویدادهای محلی را از منابع مختلف جمع‌آوری می‌کند و بر اساس ترجیحات کاربران، اعلان‌های شخصی‌سازی شده ارسال می‌کند.
+
+### ویژگی‌ها 🌟
+
+- **جمع‌آوری خودکار رویدادها**: جمع‌آوری رویدادها از منابع مختلف با استفاده از Puppeteer و Cheerio
+- **تطبیق هوشمند رویدادها**: فیلتر کردن رویدادها بر اساس ترجیحات کاربر (موقعیت، دسته‌بندی‌ها، شعاع)
+- **اعلان‌های چند کاناله**: پشتیبانی از اعلان‌های پیامکی (از طریق Twilio) و ایمیل
+- **ترجیحات کاربر**: امکان تنظیم موقعیت، دسته‌بندی‌های مورد علاقه و تنظیمات اعلان توسط کاربر
+- **API RESTful**: نقاط پایانی API مستند شده برای مدیریت کاربران و رویدادها
+- **مستندات Swagger**: مستندات تعاملی API
+- **ادغام MongoDB**: ذخیره‌سازی و بازیابی کارآمد داده‌ها
+- **جمع‌آوری برنامه‌ریزی شده**: به‌روزرسانی خودکار رویدادها با استفاده از node-cron
+- **مدیریت خطاها**: مدیریت و ثبت خطاهای جامع
+
+### فناوری‌های استفاده شده 🛠️
+
+- **بک‌اند**: Node.js، Express.js
+- **پایگاه داده**: MongoDB با Mongoose
+- **جمع‌آوری وب**: Puppeteer، Cheerio
+- **مستندات API**: Swagger UI
+- **اعلان‌ها**: Twilio (پیامک)، Nodemailer (ایمیل)
+- **برنامه‌ریزی**: node-cron
+- **ثبت**: Winston
+
+### پیش‌نیازها 📋
+
+- Node.js (نسخه ۱۴ یا بالاتر)
+- MongoDB
+- Google Chrome (برای Puppeteer)
+- حساب Twilio (اختیاری، برای اعلان‌های پیامکی)
+- سرور SMTP (اختیاری، برای اعلان‌های ایمیل)
+
+### نصب 🚀
+
+۱. کلون کردن مخزن:
+```bash
+git clone https://github.com/VersatileFusion/Local-Event-Scraper-and-Alert-System.git
+cd Local-Event-Scraper-and-Alert-System
+```
+
+۲. نصب وابستگی‌ها:
+```bash
+npm install
+```
+
+۳. ایجاد فایل `.env` در دایرکتوری اصلی:
+```env
+PORT=3000
+MONGODB_URI=mongodb://localhost:27017/
+NODE_ENV=development
+
+# تنظیمات Twilio (اختیاری)
+TWILIO_ACCOUNT_SID=your_twilio_account_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_PHONE_NUMBER=your_twilio_phone_number
+
+# تنظیمات SMTP (اختیاری)
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=your_smtp_username
+SMTP_PASS=your_smtp_password
+
+# تنظیمات Chrome (اختیاری)
+CHROME_PATH=C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe
+```
+
+### استفاده 💡
+
+۱. راه‌اندازی سرور:
+```bash
+npm run dev
+```
+
+۲. پر کردن پایگاه داده با داده‌های نمونه:
+```bash
+npm run seed
+```
+
+۳. راه‌اندازی جمع‌آوری رویدادها:
+```bash
+npm run scrape
+```
+
+### نقاط پایانی API 🌐
+
+#### کاربران
+- `POST /api/users` - ایجاد کاربر جدید
+- `GET /api/users/:userId` - دریافت جزئیات کاربر
+- `PUT /api/users/:userId/preferences` - به‌روزرسانی ترجیحات کاربر
+- `PUT /api/users/:userId/location` - به‌روزرسانی موقعیت کاربر
+
+#### رویدادها
+- `GET /api/events` - دریافت تمام رویدادها
+- `GET /api/events/:eventId` - دریافت جزئیات رویداد
+- `GET /api/events/search` - جستجوی رویدادها بر اساس معیارها
+
+### مستندات API 📚
+
+پس از راه‌اندازی سرور، به آدرس زیر مراجعه کنید:
+```
+http://localhost:3000/api-docs
+```
+
+### مشارکت 🤝
+
+۱. فورک کردن مخزن
+۲. ایجاد شاخه ویژگی جدید (`git checkout -b feature/AmazingFeature`)
+۳. ثبت تغییرات (`git commit -m 'افزودن ویژگی جدید'`)
+۴. ارسال به شاخه (`git push origin feature/AmazingFeature`)
+۵. ایجاد Pull Request
+
+### مجوز 📄
+
+این پروژه تحت مجوز MIT منتشر شده است - برای جزئیات به فایل [LICENSE](LICENSE) مراجعه کنید.
+
+### قدردانی 🙏
+
+- [Express.js](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Puppeteer](https://pptr.dev/)
+- [Twilio](https://www.twilio.com/)
+- [Swagger](https://swagger.io/)
+
+### پشتیبانی 💬
+
+اگر سوالی دارید یا نیاز به کمک دارید، لطفاً یک issue در مخزن GitHub ایجاد کنید. 
